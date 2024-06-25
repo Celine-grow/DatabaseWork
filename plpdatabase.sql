@@ -21,37 +21,37 @@ select
 count(gender) as num 
 from mydata
 where indebt="True" and gender="Male";
-There are 164 men who are indebt
+/*There are 164 men who are indebt*/
 select 
 count(gender) as num 
 from mydata
 where indebt="True" and gender="Female";
-THere are 169 women who are in debt
+/*THere are 169 women who are in debt*/
 select 
 count(gender) as num 
 from mydata
 where indebt="True" and profession="student";
-There are 145 students indebt
+/*There are 145 students indebt*/
 select 
 count(gender) as num 
 from mydata
 where indebt="True" and  profession="Software Engineer";
-There are 169 software engineers indebt
+/*There are 169 software engineers indebt*/
 select 
 count(gender) as num 
 from mydata
 where indebt="True" and  profession="Marketer Manager";
-There are 183 marketer managers indebt
+/*There are 183 marketer managers indebt*/
 select 
 count(gender) as num 
 from mydata
 where indebt="True" and  income >=19000;
-Most people with income of below 19000 are indebt 
+/*Most people with income of below 19000 are indebt */
 select 
 count(Owns_Car) as num 
 from mydata
 where indebt="True" and  Owns_Car="True" and isHomeOwner="True" ;
-COOL FACT:Funnily those who are indebt own cars and own homes with a 24 difference with those who dont.
+/*COOL FACT:Funnily those who are indebt own cars and own homes with a 24 difference with those who dont.*/
 select
 interests,
 sum(income) as income
@@ -67,7 +67,7 @@ interests,
 sum(income) as income
 from mydata
 where interests='Sports';
-COOL FACT:People interested with Lifestyle earn more money than those with sports and travel.
+/*COOL FACT:People interested with Lifestyle earn more money than those with sports and travel.*/
 select 
 sum(time_spent) as time,
 platform
@@ -83,7 +83,7 @@ sum(time_spent) as time,
 platform
 from mydata
 where platform="Youtube";
-Which platform is used most?Instagram is used more by the people with 1870 followed by youtube then facebook
+/*Which platform is used most?Instagram is used more by the people with 1870 followed by youtube then facebook*/
 select
 sum(time_spent) as timeused
 from mydata
@@ -99,7 +99,7 @@ sum(time_spent) as timeused
 from mydata
 group by age
 having age between 30 and 50;
-Who spend most time on social media?People between the age of 30 and 50 spend more time on social media followed by those above 50 then those below 30.
+/*Who spend most time on social media?People between the age of 30 and 50 spend more time on social media followed by those above 50 then those below 30.*/
 
 
 
